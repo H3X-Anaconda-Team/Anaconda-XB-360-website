@@ -1,1 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Anaconda XB 360</title>
+  <meta name="description" content="What Anaconda XB 360 is, why it exists, and who builds it.">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
 
+  <div class="grid-bg"></div>
+  <div class="scanlines"></div>
+
+  <header class="site-header">
+    <a href="../index.html" class="brand">
+      <img src="../assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_app_called_-0.jpg" alt="Anaconda XB 360 logo" class="brand-logo">
+      <span class="brand-name">Anaconda XB 360</span>
+    </a>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="categories.html">Categories</a>
+      <a href="install.html">Install</a>
+      <a href="faq.html">FAQ</a>
+      <a href="https://github.com/H3X-Anaconda-Team/anaconda-xb-360" class="nav-github" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="prose">
+
+      <h1>About Anaconda XB 360</h1>
+
+      <p>
+        Anaconda XB 360 is a <strong>custom homebrew store</strong> for
+        modded Xbox 360 consoles. It runs as a native application on your
+        console, reads a catalog of homebrew from GitHub, and installs
+        apps, games, emulators, and themes directly to your HDD.
+      </p>
+
+      <h2>Why it exists</h2>
+
+      <p>
+        The Xbox 360 homebrew scene has plenty of great content, but no
+        single modern place to browse and install it. Anaconda XB 360 is
+        an attempt to fix that: one menu, one catalog, one place to
+        update from.
+      </p>
+
+      <p>
+        It also pulls from the
+        <a href="https://github.com/951261/X-Store" target="_blank" rel="noopener">Free60 Store (X-Store)</a>
+        alongside its own catalog, so you get both worlds without having
+        to switch between two apps.
+      </p>
+
+      <h2>What makes it different</h2>
+
+      <ul>
+        <li><strong>Native C++ .xex</strong> — not a Lua script. Full HTTP,
+            real file I/O, no sandbox limits.</li>
+        <li><strong>Catalog-driven</strong> — content lives in <code>.ini</code>
+            files on GitHub. Adding a new app or theme doesn't need a new build.</li>
+        <li><strong>External repos</strong> — you can point at any compatible
+            catalog, not just the official one.</li>
+        <li><strong>Portable</strong> — the entire app runs on a PC during
+            development, so testing doesn't need a console.</li>
+      </ul>
+
+      <h2>Who builds it</h2>
+
+      <p>
+        <strong>One person.</strong> No team, no funding, no outside help.
+        Progress is slow because of that, and updates come when they come.
+        Please be patient.
+      </p>
+
+      <p>
+        The best way to help right now is to
+        <a href="https://github.com/H3X-Anaconda-Team/anaconda-xb-360" target="_blank" rel="noopener">star the repo</a>.
+        That's the signal that people are interested, and it's the
+        easiest way to be notified when a build goes public.
+      </p>
+
+      <h2>Status</h2>
+
+      <div class="notice notice-warning neon-box">
+        <strong>Not public yet.</strong>
+        Anaconda XB 360 is in early development. A first public build is
+        planned but not scheduled. Star the repo to be notified.
+      </div>
+
+      <h2>Credits</h2>
+
+      <ul>
+        <li><strong>Aurora</strong> — the dashboard that makes modded consoles usable</li>
+        <li><strong>Free60 / X-Store</strong> — the external content source Anaconda pulls from</li>
+        <li><strong>libxenon</strong> — the open-source toolchain</li>
+        <li><strong>The Xbox 360 homebrew community</strong> — for keeping the scene alive</li>
+      </ul>
+
+      <h2>License</h2>
+
+      <p>
+        Anaconda XB 360 is released under the
+        <a href="https://github.com/H3X-Anaconda-Team/anaconda-xb-360/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>.
+      </p>
+
+      <p class="hero-note">
+        Not affiliated with Microsoft, Aurora, or any other project
+        referenced here.
+      </p>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <img src="../assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_app_called_-0.jpg" alt="Anaconda XB 360" class="footer-logo">
+      <div class="footer-brand">Anaconda XB 360</div>
+      <div class="footer-links">
+        <a href="https://github.com/H3X-Anaconda-Team/anaconda-xb-360" target="_blank" rel="noopener">GitHub</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <div class="footer-note">Not affiliated with Microsoft or Aurora. Built by one person.</div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
