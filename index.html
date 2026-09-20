@@ -1,1 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anaconda XB 360 — Homebrew Store for Modded Xbox 360</title>
+  <meta name="description" content="Anaconda XB 360 is a custom homebrew store for modded Xbox 360 consoles. Browse, download, and install apps, games, emulators, and themes directly on-console.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <div class="grid-bg"></div>
+  <div class="scanlines"></div>
+
+  <header class="site-header">
+    <a href="index.html" class="brand">
+      <img src="assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_app_called_-0.jpg" alt="Anaconda XB 360 logo" class="brand-logo">
+      <span class="brand-name">Anaconda XB 360</span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="pages/about.html">About</a>
+      <a href="pages/categories.html">Categories</a>
+      <a href="pages/install.html">Install</a>
+      <a href="pages/faq.html">FAQ</a>
+      <a href="https://github.com/H3X-Anaconda-Team/anaconda-xb-360" class="nav-github" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-inner">
+
+        <div class="hero-logo-wrap">
+          <div class="hero-logo-glow"></div>
+          <img src="assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_app_called_-0.jpg" alt="Anaconda XB 360" class="hero-logo">
+        </div>
+
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          Solo project · Not public yet
+        </div>
+
+        <h1 class="hero-title neon-text">
+          A <span class="accent">homebrew store</span><br>for modded Xbox 360
+        </h1>
+
+        <p class="hero-sub">
+          Browse, download, and install apps, games, emulators, and themes
+          directly on your console. RGH, JTAG, and softmod supported — as
+          long as you're running Aurora.
+        </p>
+
+        <div class="repo-box neon-box">
+          <div class="repo-box-label">Store repo URL</div>
+          <div class="repo-box-url" id="repo-url">https://raw.githubusercontent.com/H3X-Anaconda-Team/anaconda-xb-360/main/Catalog/repo.ini</div>
+          <button class="btn btn-primary" onclick="copyRepoUrl()">Copy URL</button>
+          <span class="copy-feedback" id="copy-feedback"></span>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn btn-star" href="https://github.com/H3X-Anaconda-Team/anaconda-xb-360" target="_blank" rel="noopener">
+            ⭐ Star on GitHub
+          </a>
+          <a class="btn btn-secondary" href="pages/install.html">Install guide</a>
+        </div>
+
+        <p class="hero-note">
+          Building this alone. Star the repo to be notified the moment a
+          build goes public.
+        </p>
+      </div>
+    </section>
+
+    <section class="section fade-in">
+      <h2 class="section-title neon-text">What it does</h2>
+      <div class="feature-grid">
+        <div class="feature-card neon-card">
+          <div class="feature-icon">📦</div>
+          <h3>Browse categories</h3>
+          <p>Apps, games, emulators, themes — all in one menu on the console.</p>
+        </div>
+        <div class="feature-card neon-card">
+          <div class="feature-icon">⬇️</div>
+          <h3>Download on-console</h3>
+          <p>No PC required. Pick an item, and the store handles the rest.</p>
+        </div>
+        <div class="feature-card neon-card">
+          <div class="feature-icon">🗜️</div>
+          <h3>Auto-extract and place</h3>
+          <p>Files land in the correct folder automatically. Ready to use.</p>
+        </div>
+        <div class="feature-card neon-card">
+          <div class="feature-icon">🔗</div>
+          <h3>Multiple sources</h3>
+          <p>Anaconda's own catalog plus the Free60 Store — all in one place.</p>
+        </div>
+        <div class="feature-card neon-card">
+          <div class="feature-icon">⚙️</div>
+          <h3>Configurable repo</h3>
+          <p>Change the source URL from the Settings menu on the console.</p>
+        </div>
+        <div class="feature-card neon-card">
+          <div class="feature-icon">🎮</div>
+          <h3>Any modded console</h3>
+          <p>RGH, JTAG, or softmod. If it runs Aurora, it runs Anaconda.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt fade-in">
+      <h2 class="section-title neon-text">Compatibility</h2>
+      <div class="table-wrap">
+        <table class="compat-table">
+          <thead>
+            <tr>
+              <th>Requirement</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Console type</td><td>RGH, JTAG, or softmod</td></tr>
+            <tr><td>Dashboard</td><td>Aurora must be installed</td></tr>
+            <tr><td>Storage</td><td>HDD or USB drive for installs</td></tr>
+            <tr><td>Network</td><td>Internet access for downloading content</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section fade-in">
+      <h2 class="section-title neon-text">Status</h2>
+      <div class="notice notice-warning neon-box">
+        <strong>Not public yet.</strong>
+        Anaconda XB 360 is in early development and built by one person.
+        Progress is slow by necessity. Star the repo to be notified when
+        a build drops.
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-star" href="https://github.com/H3X-Anaconda-Team/anaconda-xb-360" target="_blank" rel="noopener">
+          ⭐ Star the repo
+        </a>
+        <a class="btn btn-secondary" href="https://github.com/H3X-Anaconda-Team/anaconda-xb-360/releases" target="_blank" rel="noopener">
+          View releases
+        </a>
+      </div>
+    </section>
+
+    <section class="section section-alt fade-in">
+      <h2 class="section-title neon-text">Documentation</h2>
+      <div class="doc-grid">
+        <a class="doc-card neon-card" href="https://github.com/H3X-Anaconda-Team/anaconda-xb-360/blob/main/Docs/ARCHITECTURE.md" target="_blank" rel="noopener">
+          <h3>Architecture</h3>
+          <p>How the code is organised.</p>
+        </a>
+        <a class="doc-card neon-card" href="https://github.com/H3X-Anaconda-Team/anaconda-xb-360/blob/main/Docs/BUILDING.md" target="_blank" rel="noopener">
+          <h3>Building</h3>
+          <p>How to compile the .xex.</p>
+        </a>
+        <a class="doc-card neon-card" href="https://github.com/H3X-Anaconda-Team/anaconda-xb-360/blob/main/Docs/CATALOG_FORMAT.md" target="_blank" rel="noopener">
+          <h3>Catalog format</h3>
+          <p>Full .ini reference.</p>
+        </a>
+        <a class="doc-card neon-card" href="https://github.com/H3X-Anaconda-Team/anaconda-xb-360/blob/main/Docs/ROADMAP.md" target="_blank" rel="noopener">
+          <h3>Roadmap</h3>
+          <p>What's planned next.</p>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <img src="assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_app_called_-0.jpg" alt="Anaconda XB 360" class="footer-logo">
+      <div class="footer-brand neon-text">Anaconda XB 360</div>
+      <div class="footer-links">
+        <a href="https://github.com/H3X-Anaconda-Team/anaconda-xb-360" target="_blank" rel="noopener">GitHub</a>
+        <a href="pages/about.html">About</a>
+        <a href="pages/faq.html">FAQ</a>
+      </div>
+      <div class="footer-note">
+        Not affiliated with Microsoft or Aurora. Built by one person.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+        </html>
