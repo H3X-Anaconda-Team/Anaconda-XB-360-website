@@ -1,1 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Install — Anaconda XB 360</title>
+  <meta name="description" content="How to install Anaconda XB 360 on a modded Xbox 360.">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
 
+  <div class="grid-bg"></div>
+  <div class="scanlines"></div>
+
+  <header class="site-header">
+    <a href="../index.html" class="brand">
+      <img src="../assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_app_called_-0.jpg" alt="Anaconda XB 360 logo" class="brand-logo">
+      <span class="brand-name">Anaconda XB 360</span>
+    </a>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="categories.html">Categories</a>
+      <a href="install.html">Install</a>
+      <a href="faq.html">FAQ</a>
+      <a href="https://github.com/H3X-Anaconda-Team/anaconda-xb-360" class="nav-github" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="prose">
+
+      <h1>Install Anaconda XB 360</h1>
+
+      <div class="notice notice-warning neon-box">
+        <strong>Not public yet.</strong>
+        There's no downloadable build at the moment. This page describes
+        the install process that will apply once version 1.0.0 is
+        released.
+      </div>
+
+      <h2>Requirements</h2>
+
+      <ul>
+        <li>Xbox 360 with <strong>RGH</strong>, <strong>JTAG</strong>, or a working <strong>softmod</strong></li>
+        <li><strong>Aurora</strong> dashboard installed</li>
+        <li>HDD or USB drive with at least 500 MB free</li>
+        <li>Internet connection on the console</li>
+        <li>An FTP client (or a USB drive) to transfer files</li>
+      </ul>
+
+      <h2>Step 1 — Get the .xex</h2>
+
+      <p>
+        Once released, download <code>AnacondaXB360.xex</code> from the
+        <a href="https://github.com/H3X-Anaconda-Team/anaconda-xb-360/releases" target="_blank" rel="noopener">Releases page</a>.
+      </p>
+
+      <h2>Step 2 — Transfer to your console</h2>
+
+      <h3>Option A — FTP</h3>
+
+      <ol>
+        <li>Connect to your console's FTP server.</li>
+        <li>Create the folder <code>Hdd:\Apps\AnacondaXB360\</code>.</li>
+        <li>Upload <code>AnacondaXB360.xex</code> into it.</li>
+      </ol>
+
+      <h3>Option B — USB drive</h3>
+
+      <ol>
+        <li>Format a USB drive as FAT32.</li>
+        <li>Copy <code>AnacondaXB360.xex</code> into a folder named <code>AnacondaXB360</code>.</li>
+        <li>Plug the drive into the console.</li>
+        <li>Use Aurora's file manager to copy the folder to <code>Hdd:\Apps\AnacondaXB360\</code>.</li>
+      </ol>
+
+      <h2>Step 3 — Launch</h2>
+
+      <ol>
+        <li>Open Aurora.</li>
+        <li>Navigate to your apps list.</li>
+        <li>Select <strong>Anaconda XB 360</strong>.</li>
+      </ol>
+
+      <h2>Step 4 — First run</h2>
+
+      <p>
+        On first launch, Anaconda creates these on your HDD:
+      </p>
+
+      <pre><code>Hdd:\Anaconda\anaconda.cfg
+Hdd:\Anaconda\anaconda.log
+Hdd:\Anaconda\cache\</code></pre>
+
+      <p>
+        The default repo URL is baked in, so the store loads immediately.
+      </p>
+
+      <h2>Step 5 — Change the repo (optional)</h2>
+
+      <ol>
+        <li>Launch Anaconda XB 360.</li>
+        <li>Select <strong>Settings</strong>.</li>
+        <li>Enter the new repo URL.</li>
+        <li>Confirm.</li>
+      </ol>
+
+      <p>
+        The setting is saved to <code>Hdd:\Anaconda\anaconda.cfg</code>.
+      </p>
+
+      <h2>Uninstalling</h2>
+
+      <ol>
+        <li>Delete <code>Hdd:\Apps\AnacondaXB360\</code></li>
+        <li>Delete <code>Hdd:\Anaconda\</code></li>
+      </ol>
+
+      <p>
+        Content you installed through the store stays where it was placed.
+      </p>
+
+      <h2>Troubleshooting</h2>
+
+      <ul>
+        <li><strong>App won't launch</strong> — re-download the .xex; the file may be corrupt.</li>
+        <li><strong>"Could not reach repository"</strong> — test your console's network in Aurora settings.</li>
+        <li><strong>Downloads fail</strong> — try a different repo URL in Settings.</li>
+        <li><strong>Extract fails</strong> — delete <code>Hdd:\Anaconda\cache\</code> and retry.</li>
+      </ul>
+
+      <p>
+        For anything else, check the
+        <a href="faq.html">FAQ</a> or open an issue with your
+        <code>anaconda.log</code> attached.
+      </p>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <img src="../assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_app_called_-0.jpg" alt="Anaconda XB 360" class="footer-logo">
+      <div class="footer-brand">Anaconda XB 360</div>
+      <div class="footer-links">
+        <a href="https://github.com/H3X-Anaconda-Team/anaconda-xb-360" target="_blank" rel="noopener">GitHub</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <div class="footer-note">Not affiliated with Microsoft or Aurora. Built by one person.</div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
